@@ -17,8 +17,11 @@ CREATE TABLE passering (
     belop           NUMERIC(10,2) NOT NULL CHECK (belop >= 0),
 
     CONSTRAINT fk_passering_bil
-                       foreign key (regnr)
-                       references bil(regnr)
-                       on update cascade
-                       on delete set null
+                    foreign key (regnr)
+                    references bil(regnr)
+                    on update cascade
+                    on delete set null
 );
+
+CREATE INDEX idx_passering_regnr_tidspunkt ON passering(regnr, tidspunkt DESC);
+CREATE INDEX idx_passering_tidspunkt ON passering(tidspunkt DESC);

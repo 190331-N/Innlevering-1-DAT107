@@ -1,0 +1,1 @@
+ALTER TABLE bil DROP COLUMN telefonnummer;
