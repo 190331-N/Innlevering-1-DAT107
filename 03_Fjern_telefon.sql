@@ -3,4 +3,4 @@ ALTER TABLE bil DROP COLUMN telefonnummer;
 
 
 GAY GAY GAY
-    
+    GAY GAY GAYY GAY GAY
