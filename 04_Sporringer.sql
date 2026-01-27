@@ -10,7 +10,7 @@ SELECT
     b.epost
 FROM passering p
 LEFT JOIN bil b
-ON p. regnr = b.regnr
+ON p.regnr = b.regnr
 ORDER BY p.tidspunkt;
 
 --oppgave F:
@@ -48,6 +48,6 @@ LIMIT 1;
 
 --OPPGAVE j:
 SELECT
-    COUNT (*) AS antall_uten_regnr
+    COUNT(*) AS antall_uten_regnr
 FROM passering
 WHERE regnr IS NULL;
