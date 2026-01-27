@@ -4,9 +4,9 @@
 SELECT
     p.passering_id,
     p.tidspunkt,
-    p.bompengebelop,
+    p.belop,
     p.regnr,
-    b.eier,
+    b.eier_navn,
     b.epost
 FROM passering p
 LEFT JOIN bil b
@@ -17,14 +17,14 @@ ORDER BY p.tidspunkt;
 SELECT
     p.passering_id,
     p.tidspunkt,
-    p.bompengebelop,
+    p.belop,
     p.regnr,
-    b.eier,
+    b.eier_navn,
     b.epost
 FROM  passering p
 Inner JOIN bil b
 ON p.regnr = b.regnr
-ORDER BY p.tidspunk;
+ORDER BY p.tidspunkt;
 
 --Oppgave H:
 SELECT
@@ -39,7 +39,7 @@ ORDER BY antall_passeringer DESC, p.regnr;
 SELECT
     p.passering_id,
     p.tidspunkt,
-    p.bompengebelop,
+    p.belop,
     p.regnr
 FROM passering p
 WHERE p.regnr = 'AA10000'
