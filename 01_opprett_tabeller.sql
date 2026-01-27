@@ -6,7 +6,7 @@ CREATE TABLE bil (
     eier_navn       VARCHAR(100) not null,
     eier_adresse    VARCHAR(200) not null,
     epost           VARCHAR(150) not null,
-    telefonnummer   VARCHAR(30) not null,
+    telefonnummer   VARCHAR(30) not null
 );
 
 CREATE TABLE passering (
