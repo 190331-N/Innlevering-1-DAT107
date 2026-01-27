@@ -12,4 +12,4 @@ INSERT INTO passering (regnr, tidspunkt, bompengebod, belop) VALUES
     ('BB20000', now() - interval '2 hours', 'Bergen nord', 30.00),
 
     (NULL,      now() - interval '6 days', 'Bergen vest', 45.00),
-    (NULL,      now() - interval '5 hours', 'Bergen nord', 30.00),
+    (NULL,      now() - interval '5 hours', 'Bergen nord', 30.00);
