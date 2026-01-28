@@ -6,11 +6,13 @@ SELECT
     p.tidspunkt,
     p.belop,
     p.regnr,
+    p.landskode,
     b.eier_navn,
     b.epost
 FROM passering p
 LEFT JOIN bil b
 ON p.regnr = b.regnr
+and p.landskode = b.landskode
 ORDER BY p.tidspunkt;
 
 --oppgave F:
@@ -19,20 +21,23 @@ SELECT
     p.tidspunkt,
     p.belop,
     p.regnr,
+    p.landskode,
     b.eier_navn,
     b.epost
 FROM  passering p
 Inner JOIN bil b
 ON p.regnr = b.regnr
+AND p.landskode = b.landskode
 ORDER BY p.tidspunkt;
 
 --Oppgave H:
 SELECT
     p.regnr,
+    p.landskode,
     COUNT(*) AS antall_passeringer
 FROM passering p
 WHERE p.regnr IS NOT NULL
-GROUP BY p.regnr
+GROUP BY p.regnr, p.landskode
 ORDER BY antall_passeringer DESC, p.regnr;
 
 --OPPGAVE I:
@@ -40,7 +45,8 @@ SELECT
     p.passering_id,
     p.tidspunkt,
     p.belop,
-    p.regnr
+    p.regnr,
+    p.landskode
 FROM passering p
 WHERE p.regnr = 'AA10000'
 ORDER BY p.tidspunkt DESC
