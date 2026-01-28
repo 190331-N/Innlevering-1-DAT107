@@ -3,15 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.54">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <Grants>1||-9223372036854775808|c|G
-1||10|c|G
-1||10|C|G
-1||10|T|G
-4||-9223372036854775808|c|G
-4||10|c|G
-4||10|C|G
-4||10|T|G
-17942||-9223372036854775808|c|G
+      <Grants>17942||-9223372036854775808|c|G
 17942||16441|c|G
 17942||16481|c|G
 17942||16441|C|G
@@ -57,7 +49,7 @@
 210158||-9223372036854775808|T|G
 210158||210002|T|G
 210158||210021|T|G</Grants>
-      <IntrospectionStateNumber>683496</IntrospectionStateNumber>
+      <IntrospectionStateNumber>683501</IntrospectionStateNumber>
       <ServerVersion>17.2</ServerVersion>
       <StartupTime>1768357752</StartupTime>
       <TimeZones>true ACDT
@@ -2795,7 +2787,7 @@ false Zulu
 14650||10|C|G
 14650||-9223372036854775808|U|G
 14650||10|U|G</Grants>
-      <IntrospectionStateNumber>683496</IntrospectionStateNumber>
+      <IntrospectionStateNumber>683501</IntrospectionStateNumber>
       <ObjectId>209653</ObjectId>
       <OwnerName>hamidh2389</OwnerName>
     </database>
@@ -9886,67 +9878,90 @@ false Zulu
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>683496</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>683496</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>683496</LastIntrospectionL3Xid>
+      <LastIntrospectionL1Xid>683501</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>683501</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>683501</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-01-27.13:01:40</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2026-01-27.13:04:26</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>532</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <table id="1501" parent="1500" name="ansatt">
+    <sequence id="1501" parent="1500" name="passering_passering_id_seq">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>218808</ObjectId>
+      <SequenceIdentity>1</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>683498</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <OwnerName>hamidh2389</OwnerName>
+    </sequence>
+    <table id="1502" parent="1500" name="ansatt">
       <DetailsLevel>2</DetailsLevel>
       <ObjectId>209856</ObjectId>
       <StateNumber>229625</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>hamidh2389</OwnerName>
     </table>
-    <table id="1502" parent="1500" name="ansatt0">
+    <table id="1503" parent="1500" name="ansatt0">
       <DetailsLevel>2</DetailsLevel>
       <ObjectId>210541</ObjectId>
       <StateNumber>231133</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>hamidh2389</OwnerName>
     </table>
-    <column id="1503" parent="1501" name="ansattnr">
+    <table id="1504" parent="1500" name="bil">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>218801</ObjectId>
+      <StateNumber>683498</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>hamidh2389</OwnerName>
+    </table>
+    <table id="1505" parent="1500" name="passering">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>218809</ObjectId>
+      <StateNumber>683498</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>hamidh2389</OwnerName>
+    </table>
+    <column id="1506" parent="1502" name="ansattnr">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>229625</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="1504" parent="1501" name="etternavn">
+    <column id="1507" parent="1502" name="etternavn">
       <Position>2</Position>
       <StateNumber>229625</StateNumber>
       <StoredType>varchar(25)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1505" parent="1501" name="fornavn">
+    <column id="1508" parent="1502" name="fornavn">
       <Position>3</Position>
       <StateNumber>229625</StateNumber>
       <StoredType>varchar(25)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1506" parent="1501" name="ansattdato">
+    <column id="1509" parent="1502" name="ansattdato">
       <Position>4</Position>
       <StateNumber>229625</StateNumber>
       <StoredType>date|0s</StoredType>
       <TypeId>1082</TypeId>
     </column>
-    <column id="1507" parent="1501" name="stilling">
+    <column id="1510" parent="1502" name="stilling">
       <Position>5</Position>
       <StateNumber>229625</StateNumber>
       <StoredType>varchar(25)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1508" parent="1501" name="lØnn">
+    <column id="1511" parent="1502" name="lØnn">
       <Position>6</Position>
       <StateNumber>229625</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <index id="1509" parent="1501" name="ansatt_pkey">
+    <index id="1512" parent="1502" name="ansatt_pkey">
       <ColNames>ansattnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>209859</ObjectId>
@@ -9955,51 +9970,51 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="1510" parent="1501" name="ansatt_pkey">
+    <key id="1513" parent="1502" name="ansatt_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>209860</ObjectId>
       <Primary>1</Primary>
       <StateNumber>229625</StateNumber>
       <UnderlyingIndexId>209859</UnderlyingIndexId>
     </key>
-    <column id="1511" parent="1502" name="ansattnr">
+    <column id="1514" parent="1503" name="ansattnr">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>231133</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="1512" parent="1502" name="etternavn">
+    <column id="1515" parent="1503" name="etternavn">
       <Position>2</Position>
       <StateNumber>231133</StateNumber>
       <StoredType>varchar(25)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1513" parent="1502" name="fornavn">
+    <column id="1516" parent="1503" name="fornavn">
       <Position>3</Position>
       <StateNumber>231133</StateNumber>
       <StoredType>varchar(25)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1514" parent="1502" name="ansattdato">
+    <column id="1517" parent="1503" name="ansattdato">
       <Position>4</Position>
       <StateNumber>231133</StateNumber>
       <StoredType>date|0s</StoredType>
       <TypeId>1082</TypeId>
     </column>
-    <column id="1515" parent="1502" name="stilling">
+    <column id="1518" parent="1503" name="stilling">
       <Position>5</Position>
       <StateNumber>231133</StateNumber>
       <StoredType>varchar(25)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1516" parent="1502" name="lØnn">
+    <column id="1519" parent="1503" name="lØnn">
       <Position>6</Position>
       <StateNumber>231133</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <index id="1517" parent="1502" name="ansatt0_pkey">
+    <index id="1520" parent="1503" name="ansatt0_pkey">
       <ColNames>ansattnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>210544</ObjectId>
@@ -10008,12 +10023,151 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="1518" parent="1502" name="ansatt0_pkey">
+    <key id="1521" parent="1503" name="ansatt0_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>210545</ObjectId>
       <Primary>1</Primary>
       <StateNumber>231133</StateNumber>
       <UnderlyingIndexId>210544</UnderlyingIndexId>
+    </key>
+    <column id="1522" parent="1504" name="regnr">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>683497</StateNumber>
+      <StoredType>varchar(20)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1523" parent="1504" name="eier_navn">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>683497</StateNumber>
+      <StoredType>varchar(100)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1524" parent="1504" name="eier_adresse">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>683497</StateNumber>
+      <StoredType>varchar(200)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1525" parent="1504" name="epost">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>683497</StateNumber>
+      <StoredType>varchar(150)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1526" parent="1504" name="telefonnummer">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>683497</StateNumber>
+      <StoredType>varchar(30)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="1527" parent="1504" name="bil_pkey">
+      <ColNames>regnr</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>218806</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>683497</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="1528" parent="1504" name="bil_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>218807</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>683497</StateNumber>
+      <UnderlyingIndexId>218806</UnderlyingIndexId>
+    </key>
+    <check id="1529" parent="1505" name="passering_belop_check">
+      <ColNames>belop</ColNames>
+      <ObjectId>218813</ObjectId>
+      <Predicate>belop &gt;= (0)::numeric</Predicate>
+      <StateNumber>683498</StateNumber>
+    </check>
+    <column id="1530" parent="1505" name="passering_id">
+      <DefaultExpression>nextval(&apos;passering_passering_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>683498</StateNumber>
+      <StoredType>bigint|0s</StoredType>
+      <SequenceId>218808</SequenceId>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="1531" parent="1505" name="regnr">
+      <Position>2</Position>
+      <StateNumber>683498</StateNumber>
+      <StoredType>varchar(20)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1532" parent="1505" name="tidspunkt">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>683498</StateNumber>
+      <StoredType>timestamp with time zone|0s</StoredType>
+      <TypeId>1184</TypeId>
+    </column>
+    <column id="1533" parent="1505" name="bompengebod">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>683498</StateNumber>
+      <StoredType>varchar(100)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="1534" parent="1505" name="belop">
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StateNumber>683498</StateNumber>
+      <StoredType>numeric(10,2 digit)|0s</StoredType>
+      <TypeId>1700</TypeId>
+    </column>
+    <foreign-key id="1535" parent="1505" name="fk_passering_bil">
+      <ColNames>regnr</ColNames>
+      <ObjectId>218816</ObjectId>
+      <OnDelete>set-null</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+      <StateNumber>683498</StateNumber>
+      <RefKeyColPositions>1</RefKeyColPositions>
+      <RefTableId>218801</RefTableId>
+    </foreign-key>
+    <index id="1536" parent="1505" name="passering_pkey">
+      <ColNames>passering_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>218814</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>683498</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="1537" parent="1505" name="idx_passering_regnr_tidspunkt">
+      <ColNames>regnr
+tidspunkt</ColNames>
+      <ObjectId>218821</ObjectId>
+      <ReverseColNames>tidspunkt</ReverseColNames>
+      <StateNumber>683499</StateNumber>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <index id="1538" parent="1505" name="idx_passering_tidspunkt">
+      <ColNames>tidspunkt</ColNames>
+      <ObjectId>218822</ObjectId>
+      <ReverseColNames>tidspunkt</ReverseColNames>
+      <StateNumber>683500</StateNumber>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="1539" parent="1505" name="passering_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>218815</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>683498</StateNumber>
+      <UnderlyingIndexId>218814</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>
