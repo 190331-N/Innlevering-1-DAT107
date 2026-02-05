@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS bil CASCADE;
 
 CREATE TABLE bil (
     regnr           VARCHAR(20),
-    landskode       VARCHAR(2) not null,
+    landskode       VARCHAR(3) not null,
     eier_navn       VARCHAR(100) not null,
     eier_adresse    VARCHAR(200) not null,
     epost           VARCHAR(150) not null,
@@ -13,7 +13,7 @@ CREATE TABLE bil (
 
 CREATE TABLE passering (
     passering_id    BIGSERIAL PRIMARY KEY,
-    landskode       VARCHAR(2) NULL,
+    landskode       VARCHAR(3) NULL,
     regnr           VARCHAR(20) NULL,
     tidspunkt       TIMESTAMPTZ NOT NULL,
     bompengebod     VARCHAR(100) NOT NULL,

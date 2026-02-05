@@ -9912,8 +9912,8 @@ false Zulu
     </table>
     <table id="1504" parent="1500" name="bil">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>219563</ObjectId>
-      <StateNumber>702058</StateNumber>
+      <ObjectId>219605</ObjectId>
+      <StateNumber>704514</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>hamidh2389</OwnerName>
     </table>
@@ -9947,8 +9947,8 @@ false Zulu
     </table>
     <table id="1509" parent="1500" name="passering">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>219571</ObjectId>
-      <StateNumber>702058</StateNumber>
+      <ObjectId>219613</ObjectId>
+      <StateNumber>704514</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>hamidh2389</OwnerName>
     </table>
@@ -10112,52 +10112,45 @@ false Zulu
     <column id="1533" parent="1504" name="regnr">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>702057</StateNumber>
+      <StateNumber>704512</StateNumber>
       <StoredType>varchar(20)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="1534" parent="1504" name="landskode">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>702057</StateNumber>
+      <StateNumber>704512</StateNumber>
       <StoredType>varchar(2)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="1535" parent="1504" name="eier_navn">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>702057</StateNumber>
+      <StateNumber>704512</StateNumber>
       <StoredType>varchar(100)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="1536" parent="1504" name="eier_adresse">
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>702057</StateNumber>
+      <StateNumber>704512</StateNumber>
       <StoredType>varchar(200)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="1537" parent="1504" name="epost">
       <NotNull>1</NotNull>
       <Position>5</Position>
-      <StateNumber>702057</StateNumber>
+      <StateNumber>704512</StateNumber>
       <StoredType>varchar(150)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1538" parent="1504" name="telefonnummer">
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-      <StateNumber>702057</StateNumber>
-      <StoredType>varchar(30)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <index id="1539" parent="1504" name="bil_pkey">
+    <index id="1538" parent="1504" name="bil_pkey">
       <ColNames>regnr
 landskode</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>219568</ObjectId>
+      <ObjectId>219610</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>702057</StateNumber>
+      <StateNumber>704512</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationIds>100
@@ -10167,27 +10160,27 @@ default</CollationNames>
       <CollationParentNames>pg_catalog
 pg_catalog</CollationParentNames>
     </index>
-    <key id="1540" parent="1504" name="bil_pkey">
+    <key id="1539" parent="1504" name="bil_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>219569</ObjectId>
+      <ObjectId>219611</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>702057</StateNumber>
-      <UnderlyingIndexId>219568</UnderlyingIndexId>
+      <StateNumber>704512</StateNumber>
+      <UnderlyingIndexId>219610</UnderlyingIndexId>
     </key>
-    <column id="1541" parent="1505" name="katnr">
+    <column id="1540" parent="1505" name="katnr">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>690649</StateNumber>
       <StoredType>smallint|0s</StoredType>
       <TypeId>21</TypeId>
     </column>
-    <column id="1542" parent="1505" name="navn">
+    <column id="1541" parent="1505" name="navn">
       <Position>2</Position>
       <StateNumber>690649</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <index id="1543" parent="1505" name="kategori_pkey">
+    <index id="1542" parent="1505" name="kategori_pkey">
       <ColNames>katnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219332</ObjectId>
@@ -10196,49 +10189,49 @@ pg_catalog</CollationParentNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="1544" parent="1505" name="kategori_pkey">
+    <key id="1543" parent="1505" name="kategori_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219333</ObjectId>
       <Primary>1</Primary>
       <StateNumber>690649</StateNumber>
       <UnderlyingIndexId>219332</UnderlyingIndexId>
     </key>
-    <column id="1545" parent="1506" name="knr">
+    <column id="1544" parent="1506" name="knr">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>692489</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="1546" parent="1506" name="fornavn">
+    <column id="1545" parent="1506" name="fornavn">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>692489</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1547" parent="1506" name="etternavn">
+    <column id="1546" parent="1506" name="etternavn">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>692489</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1548" parent="1506" name="adresse">
+    <column id="1547" parent="1506" name="adresse">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>692489</StateNumber>
       <StoredType>varchar(100)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1549" parent="1506" name="postnr">
+    <column id="1548" parent="1506" name="postnr">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>692489</StateNumber>
       <StoredType>char(4)|0s</StoredType>
       <TypeId>1042</TypeId>
     </column>
-    <foreign-key id="1550" parent="1506" name="kunde_postnr_fkey">
+    <foreign-key id="1549" parent="1506" name="kunde_postnr_fkey">
       <ColNames>postnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219392</ObjectId>
@@ -10246,7 +10239,7 @@ pg_catalog</CollationParentNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>219311</RefTableId>
     </foreign-key>
-    <index id="1551" parent="1506" name="kunde_pkey">
+    <index id="1550" parent="1506" name="kunde_pkey">
       <ColNames>knr</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219390</ObjectId>
@@ -10255,47 +10248,47 @@ pg_catalog</CollationParentNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="1552" parent="1506" name="kunde_pkey">
+    <key id="1551" parent="1506" name="kunde_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219391</ObjectId>
       <Primary>1</Primary>
       <StateNumber>692489</StateNumber>
       <UnderlyingIndexId>219390</UnderlyingIndexId>
     </key>
-    <column id="1553" parent="1507" name="ordrenr">
+    <column id="1552" parent="1507" name="ordrenr">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>693003</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="1554" parent="1507" name="ordredato">
+    <column id="1553" parent="1507" name="ordredato">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>693003</StateNumber>
       <StoredType>date|0s</StoredType>
       <TypeId>1082</TypeId>
     </column>
-    <column id="1555" parent="1507" name="sendtdato">
+    <column id="1554" parent="1507" name="sendtdato">
       <Position>3</Position>
       <StateNumber>693003</StateNumber>
       <StoredType>date|0s</StoredType>
       <TypeId>1082</TypeId>
     </column>
-    <column id="1556" parent="1507" name="betaltdato">
+    <column id="1555" parent="1507" name="betaltdato">
       <Position>4</Position>
       <StateNumber>693003</StateNumber>
       <StoredType>date|0s</StoredType>
       <TypeId>1082</TypeId>
     </column>
-    <column id="1557" parent="1507" name="knr">
+    <column id="1556" parent="1507" name="knr">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>693003</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="1558" parent="1507" name="ordre_knr_fkey">
+    <foreign-key id="1557" parent="1507" name="ordre_knr_fkey">
       <ColNames>knr</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219402</ObjectId>
@@ -10303,7 +10296,7 @@ pg_catalog</CollationParentNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>219387</RefTableId>
     </foreign-key>
-    <index id="1559" parent="1507" name="ordre_pkey">
+    <index id="1558" parent="1507" name="ordre_pkey">
       <ColNames>ordrenr</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219400</ObjectId>
@@ -10312,42 +10305,42 @@ pg_catalog</CollationParentNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="1560" parent="1507" name="ordre_pkey">
+    <key id="1559" parent="1507" name="ordre_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219401</ObjectId>
       <Primary>1</Primary>
       <StateNumber>693003</StateNumber>
       <UnderlyingIndexId>219400</UnderlyingIndexId>
     </key>
-    <column id="1561" parent="1508" name="ordrenr">
+    <column id="1560" parent="1508" name="ordrenr">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>695371</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="1562" parent="1508" name="vnr">
+    <column id="1561" parent="1508" name="vnr">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>695371</StateNumber>
       <StoredType>char(5)|0s</StoredType>
       <TypeId>1042</TypeId>
     </column>
-    <column id="1563" parent="1508" name="prisprenhet">
+    <column id="1562" parent="1508" name="prisprenhet">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>695371</StateNumber>
       <StoredType>numeric(8,2 digit)|0s</StoredType>
       <TypeId>1700</TypeId>
     </column>
-    <column id="1564" parent="1508" name="antall">
+    <column id="1563" parent="1508" name="antall">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>695371</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <foreign-key id="1565" parent="1508" name="ordrelinje_ordrenr_fkey">
+    <foreign-key id="1564" parent="1508" name="ordrelinje_ordrenr_fkey">
       <ColNames>ordrenr</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219422</ObjectId>
@@ -10355,7 +10348,7 @@ pg_catalog</CollationParentNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>219397</RefTableId>
     </foreign-key>
-    <foreign-key id="1566" parent="1508" name="ordrelinje_vnr_fkey">
+    <foreign-key id="1565" parent="1508" name="ordrelinje_vnr_fkey">
       <ColNames>vnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219427</ObjectId>
@@ -10363,7 +10356,7 @@ pg_catalog</CollationParentNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>219334</RefTableId>
     </foreign-key>
-    <index id="1567" parent="1508" name="ordrelinje_pkey">
+    <index id="1566" parent="1508" name="ordrelinje_pkey">
       <ColNames>ordrenr
 vnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -10379,120 +10372,120 @@ pg_catalog</CollationParentNames>
       <CollationNames>
 default</CollationNames>
     </index>
-    <key id="1568" parent="1508" name="ordrelinje_pkey">
+    <key id="1567" parent="1508" name="ordrelinje_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219421</ObjectId>
       <Primary>1</Primary>
       <StateNumber>695371</StateNumber>
       <UnderlyingIndexId>219420</UnderlyingIndexId>
     </key>
-    <check id="1569" parent="1509" name="passering_belop_check">
+    <check id="1568" parent="1509" name="passering_belop_check">
       <ColNames>belop</ColNames>
-      <ObjectId>219575</ObjectId>
+      <ObjectId>219617</ObjectId>
       <Predicate>belop &gt;= (0)::numeric</Predicate>
-      <StateNumber>702058</StateNumber>
+      <StateNumber>704514</StateNumber>
     </check>
-    <column id="1570" parent="1509" name="passering_id">
+    <column id="1569" parent="1509" name="passering_id">
       <DefaultExpression>nextval(&apos;passering_passering_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>702058</StateNumber>
+      <StateNumber>704514</StateNumber>
       <StoredType>bigint|0s</StoredType>
-      <SequenceId>219570</SequenceId>
+      <SequenceId>219612</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="1571" parent="1509" name="landskode">
+    <column id="1570" parent="1509" name="landskode">
       <Position>2</Position>
-      <StateNumber>702058</StateNumber>
+      <StateNumber>704514</StateNumber>
       <StoredType>varchar(2)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1572" parent="1509" name="regnr">
+    <column id="1571" parent="1509" name="regnr">
       <Position>3</Position>
-      <StateNumber>702058</StateNumber>
+      <StateNumber>704514</StateNumber>
       <StoredType>varchar(20)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1573" parent="1509" name="tidspunkt">
+    <column id="1572" parent="1509" name="tidspunkt">
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>702058</StateNumber>
+      <StateNumber>704514</StateNumber>
       <StoredType>timestamp with time zone|0s</StoredType>
       <TypeId>1184</TypeId>
     </column>
-    <column id="1574" parent="1509" name="bompengebod">
+    <column id="1573" parent="1509" name="bompengebod">
       <NotNull>1</NotNull>
       <Position>5</Position>
-      <StateNumber>702058</StateNumber>
+      <StateNumber>704514</StateNumber>
       <StoredType>varchar(100)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1575" parent="1509" name="belop">
+    <column id="1574" parent="1509" name="belop">
       <NotNull>1</NotNull>
       <Position>6</Position>
-      <StateNumber>702058</StateNumber>
+      <StateNumber>704514</StateNumber>
       <StoredType>numeric(10,2 digit)|0s</StoredType>
       <TypeId>1700</TypeId>
     </column>
-    <foreign-key id="1576" parent="1509" name="fk_passering_bil">
+    <foreign-key id="1575" parent="1509" name="fk_passering_bil">
       <ColNames>regnr
 landskode</ColNames>
-      <ObjectId>219578</ObjectId>
+      <ObjectId>219620</ObjectId>
       <OnDelete>set-null</OnDelete>
       <OnUpdate>cascade</OnUpdate>
-      <StateNumber>702058</StateNumber>
+      <StateNumber>704514</StateNumber>
       <RefKeyColPositions>1,2</RefKeyColPositions>
-      <RefTableId>219563</RefTableId>
+      <RefTableId>219605</RefTableId>
     </foreign-key>
-    <index id="1577" parent="1509" name="passering_pkey">
+    <index id="1576" parent="1509" name="passering_pkey">
       <ColNames>passering_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>219576</ObjectId>
+      <ObjectId>219618</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>702058</StateNumber>
+      <StateNumber>704514</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="1578" parent="1509" name="idx_passering_regnr_tidspunkt">
+    <index id="1577" parent="1509" name="idx_passering_regnr_tidspunkt">
       <ColNames>regnr
 tidspunkt</ColNames>
-      <ObjectId>219583</ObjectId>
+      <ObjectId>219625</ObjectId>
       <ReverseColNames>tidspunkt</ReverseColNames>
-      <StateNumber>702059</StateNumber>
+      <StateNumber>704516</StateNumber>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <index id="1579" parent="1509" name="idx_passering_tidspunkt">
+    <index id="1578" parent="1509" name="idx_passering_tidspunkt">
       <ColNames>tidspunkt</ColNames>
-      <ObjectId>219584</ObjectId>
+      <ObjectId>219626</ObjectId>
       <ReverseColNames>tidspunkt</ReverseColNames>
-      <StateNumber>702060</StateNumber>
+      <StateNumber>704518</StateNumber>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="1580" parent="1509" name="passering_pkey">
+    <key id="1579" parent="1509" name="passering_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>219577</ObjectId>
+      <ObjectId>219619</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>702058</StateNumber>
-      <UnderlyingIndexId>219576</UnderlyingIndexId>
+      <StateNumber>704514</StateNumber>
+      <UnderlyingIndexId>219618</UnderlyingIndexId>
     </key>
-    <column id="1581" parent="1510" name="postnr">
+    <column id="1580" parent="1510" name="postnr">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>685552</StateNumber>
       <StoredType>char(4)|0s</StoredType>
       <TypeId>1042</TypeId>
     </column>
-    <column id="1582" parent="1510" name="poststed">
+    <column id="1581" parent="1510" name="poststed">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>685552</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <index id="1583" parent="1510" name="poststed_pkey">
+    <index id="1582" parent="1510" name="poststed_pkey">
       <ColNames>postnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219314</ObjectId>
@@ -10504,35 +10497,35 @@ tidspunkt</ColNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="1584" parent="1510" name="poststed_pkey">
+    <key id="1583" parent="1510" name="poststed_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219315</ObjectId>
       <Primary>1</Primary>
       <StateNumber>685552</StateNumber>
       <UnderlyingIndexId>219314</UnderlyingIndexId>
     </key>
-    <column id="1585" parent="1511" name="vnr">
+    <column id="1584" parent="1511" name="vnr">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>690833</StateNumber>
       <StoredType>char(5)|0s</StoredType>
       <TypeId>1042</TypeId>
     </column>
-    <column id="1586" parent="1511" name="dato">
+    <column id="1585" parent="1511" name="dato">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>690833</StateNumber>
       <StoredType>date|0s</StoredType>
       <TypeId>1082</TypeId>
     </column>
-    <column id="1587" parent="1511" name="gammelpris">
+    <column id="1586" parent="1511" name="gammelpris">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>690833</StateNumber>
       <StoredType>numeric(8,2 digit)|0s</StoredType>
       <TypeId>1700</TypeId>
     </column>
-    <foreign-key id="1588" parent="1511" name="prishistorikk_vnr_fkey">
+    <foreign-key id="1587" parent="1511" name="prishistorikk_vnr_fkey">
       <ColNames>vnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219349</ObjectId>
@@ -10540,7 +10533,7 @@ tidspunkt</ColNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>219334</RefTableId>
     </foreign-key>
-    <index id="1589" parent="1511" name="prishistorikk_pkey">
+    <index id="1588" parent="1511" name="prishistorikk_pkey">
       <ColNames>vnr
 dato</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -10553,54 +10546,54 @@ dato</ColNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="1590" parent="1511" name="prishistorikk_pkey">
+    <key id="1589" parent="1511" name="prishistorikk_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219348</ObjectId>
       <Primary>1</Primary>
       <StateNumber>690833</StateNumber>
       <UnderlyingIndexId>219347</UnderlyingIndexId>
     </key>
-    <column id="1591" parent="1512" name="vnr">
+    <column id="1590" parent="1512" name="vnr">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>690671</StateNumber>
       <StoredType>char(5)|0s</StoredType>
       <TypeId>1042</TypeId>
     </column>
-    <column id="1592" parent="1512" name="betegnelse">
+    <column id="1591" parent="1512" name="betegnelse">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>690671</StateNumber>
       <StoredType>varchar(100)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1593" parent="1512" name="pris">
+    <column id="1592" parent="1512" name="pris">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>690671</StateNumber>
       <StoredType>numeric(8,2 digit)|0s</StoredType>
       <TypeId>1700</TypeId>
     </column>
-    <column id="1594" parent="1512" name="katnr">
+    <column id="1593" parent="1512" name="katnr">
       <Position>4</Position>
       <StateNumber>690671</StateNumber>
       <StoredType>smallint|0s</StoredType>
       <TypeId>21</TypeId>
     </column>
-    <column id="1595" parent="1512" name="antall">
+    <column id="1594" parent="1512" name="antall">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>690671</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="1596" parent="1512" name="hylle">
+    <column id="1595" parent="1512" name="hylle">
       <Position>6</Position>
       <StateNumber>690671</StateNumber>
       <StoredType>char(3)|0s</StoredType>
       <TypeId>1042</TypeId>
     </column>
-    <foreign-key id="1597" parent="1512" name="vare_katnr_fkey">
+    <foreign-key id="1596" parent="1512" name="vare_katnr_fkey">
       <ColNames>katnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219339</ObjectId>
@@ -10608,7 +10601,7 @@ dato</ColNames>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>219329</RefTableId>
     </foreign-key>
-    <index id="1598" parent="1512" name="vare_pkey">
+    <index id="1597" parent="1512" name="vare_pkey">
       <ColNames>vnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219337</ObjectId>
@@ -10620,7 +10613,7 @@ dato</ColNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="1599" parent="1512" name="vare_pkey">
+    <key id="1598" parent="1512" name="vare_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>219338</ObjectId>
       <Primary>1</Primary>
