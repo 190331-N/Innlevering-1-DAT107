@@ -49,6 +49,7 @@ SELECT
     p.landskode
 FROM passering p
 WHERE p.regnr = 'AA10000'
+AND p.landskode ='NO'
 ORDER BY p.tidspunkt DESC
 LIMIT 1;
 
