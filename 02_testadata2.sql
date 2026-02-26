@@ -1,10 +1,25 @@
 INSERT INTO lokallag (lag_navn, mote_postnr, mote_adresse)
 Values
-('Os TF', '5210', 'Idrettsvegen 41'),
-('Oslo', '0100', 'Karl Johans Gate 5');
+('Os_TF', '5210', 'Idrettsvegen 41'),
+('Oslo_FK', '0100', 'Karl Johans Gate 5');
 
-INSERT INTO medlem (medlemsnr, fornavn, etternavn, telefon, epost, postnr, sted, gateadresse, aktiv_medlem, lokallag_id)
+INSERT INTO medlem (medlemsnr, fornavn, etternavn, telefon, epost, postnr, adresse, medlemskap, lagnavn)
 VALUES
-(100, 'Hans', 'Simmermann', '12345671', 'Hans@test.no', '5010', 'Bergen vest', 'Gate 1', TRUE, 1),
-(101, 'Bo', 'Karlsen','12345672', 'Bo@test.no', '5020', 'Bergen øst', 'Gate 2', TRUE,2),
-(2001, 'Adrian', 'Simmermann', '12345673', 'Adrian@test.no', '5010', 'Bergen vest', 'Gate 3', TRUE, 1);
+(100, 'Hans', 'Simmermann', '12345671', 'Hans@test.no', '5010',  'Gate 1', TRUE, OS_TF),
+(101, 'Bo', 'Karlsen','12345672', 'Bo@test.no', '5020', 'Gate 2', TRUE, Oslo_FK),
+(103, 'Adrian', 'Simmermann', '12345673', 'Adrian@test.no', '5010', 'Gate 3', TRUE, OS_TF);
+
+UPDATE lokallag SET leder_medlemsnr = 100 where lagnavn = OS_TF;
+UPDATE lokallag SET leder_medlemsnr = 103 where lagnavn = OS_TF;
+
+INSERT INTO medlemsavgift (medlemsnr, aar, betalt, betalt_dato)
+VALUES
+(100, 2021, TRUE, '2021-01-10'),
+(101, 2024, FALSE, '2024-04-01'),
+(101, 2026, TRUE, '2026-01-01'),
+
+(101, 2004, TRUE, '2004-01-01'),
+(101, 2005, FALSE, '2005-04-01'),
+(101, 2026, TRUE, '2026-01-05'),
+
+(103, 2026, TRUE, '2026-01-01');
