@@ -2,6 +2,7 @@
 <project version="4">
   <component name="DataSourcePerFileMappings">
     <file url="file://$PROJECT_DIR$/01_opprett_tabeller.sql" value="d45fddcd-942e-4ff9-84c2-72836c16f774" />
+    <file url="file://$PROJECT_DIR$/01_opprett_tabeller2.sql" value="d45fddcd-942e-4ff9-84c2-72836c16f774" />
     <file url="file://$PROJECT_DIR$/02_testdada.sql" value="d45fddcd-942e-4ff9-84c2-72836c16f774" />
     <file url="file://$PROJECT_DIR$/03_Fjern_telefon.sql" value="d45fddcd-942e-4ff9-84c2-72836c16f774" />
     <file url="file://$PROJECT_DIR$/04_Sporringer.sql" value="d45fddcd-942e-4ff9-84c2-72836c16f774" />
