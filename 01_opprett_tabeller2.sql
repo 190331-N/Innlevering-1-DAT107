@@ -10,9 +10,9 @@ create table poststed (
 
 CREATE TABLE lokallag (
     lagnavn         varchar(50) primary key,
-    leder_medlemsnr BIGINT      NOT NULL,
+    leder_medlemsnr BIGINT,
     mote_adresse    varchar(50) NOT NULL,
-    postnr          varchar(4)  NOT NULL references poststed(postnr)
+    mote_postnr          varchar(4)  NOT NULL references poststed(postnr)
 );
 
 create table Medlem (

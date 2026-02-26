@@ -9928,22 +9928,22 @@ false Zulu
     </table>
     <table id="1507" parent="1500" name="lokallag">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>228103</ObjectId>
-      <StateNumber>737186</StateNumber>
+      <ObjectId>228323</ObjectId>
+      <StateNumber>737228</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>hamidh2389</OwnerName>
     </table>
     <table id="1508" parent="1500" name="medlem">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>228114</ObjectId>
-      <StateNumber>737187</StateNumber>
+      <ObjectId>228334</ObjectId>
+      <StateNumber>737229</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>hamidh2389</OwnerName>
     </table>
     <table id="1509" parent="1500" name="medlemsavgift">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>228130</ObjectId>
-      <StateNumber>737188</StateNumber>
+      <ObjectId>228350</ObjectId>
+      <StateNumber>737230</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>hamidh2389</OwnerName>
     </table>
@@ -9970,8 +9970,8 @@ false Zulu
     </table>
     <table id="1513" parent="1500" name="poststed">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>228098</ObjectId>
-      <StateNumber>737186</StateNumber>
+      <ObjectId>228318</ObjectId>
+      <StateNumber>737228</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>hamidh2389</OwnerName>
     </table>
@@ -10274,45 +10274,45 @@ pg_catalog</CollationParentNames>
     <column id="1555" parent="1507" name="lagnavn">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>737186</StateNumber>
+      <StateNumber>737228</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="1556" parent="1507" name="leder_medlemsnr">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>737186</StateNumber>
+      <StateNumber>737228</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <TypeId>20</TypeId>
     </column>
     <column id="1557" parent="1507" name="mote_adresse">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>737186</StateNumber>
+      <StateNumber>737228</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="1558" parent="1507" name="postnr">
+    <column id="1558" parent="1507" name="mote_postnr">
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>737186</StateNumber>
+      <StateNumber>737228</StateNumber>
       <StoredType>varchar(4)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <foreign-key id="1559" parent="1507" name="lokallag_postnr_fkey">
-      <ColNames>postnr</ColNames>
+    <foreign-key id="1559" parent="1507" name="lokallag_mote_postnr_fkey">
+      <ColNames>mote_postnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>228108</ObjectId>
-      <StateNumber>737186</StateNumber>
+      <ObjectId>228328</ObjectId>
+      <StateNumber>737228</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>228098</RefTableId>
+      <RefTableId>228318</RefTableId>
     </foreign-key>
     <index id="1560" parent="1507" name="lokallag_pkey">
       <ColNames>lagnavn</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>228106</ObjectId>
+      <ObjectId>228326</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>737186</StateNumber>
+      <StateNumber>737228</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
@@ -10321,172 +10321,172 @@ pg_catalog</CollationParentNames>
     </index>
     <key id="1561" parent="1507" name="lokallag_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>228107</ObjectId>
+      <ObjectId>228327</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>737186</StateNumber>
-      <UnderlyingIndexId>228106</UnderlyingIndexId>
+      <StateNumber>737228</StateNumber>
+      <UnderlyingIndexId>228326</UnderlyingIndexId>
     </key>
     <column id="1562" parent="1508" name="medlemsnr">
       <DefaultExpression>nextval(&apos;medlem_medlemsnr_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>737187</StateNumber>
+      <StateNumber>737229</StateNumber>
       <StoredType>bigint|0s</StoredType>
-      <SequenceId>228113</SequenceId>
+      <SequenceId>228333</SequenceId>
       <TypeId>20</TypeId>
     </column>
     <column id="1563" parent="1508" name="fornavn">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>737187</StateNumber>
+      <StateNumber>737229</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="1564" parent="1508" name="etternavn">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>737187</StateNumber>
+      <StateNumber>737229</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="1565" parent="1508" name="telefonnr">
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>737187</StateNumber>
+      <StateNumber>737229</StateNumber>
       <StoredType>varchar(20)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="1566" parent="1508" name="epost">
       <NotNull>1</NotNull>
       <Position>5</Position>
-      <StateNumber>737187</StateNumber>
+      <StateNumber>737229</StateNumber>
       <StoredType>varchar(20)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="1567" parent="1508" name="postnr">
       <NotNull>1</NotNull>
       <Position>6</Position>
-      <StateNumber>737187</StateNumber>
+      <StateNumber>737229</StateNumber>
       <StoredType>varchar(4)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="1568" parent="1508" name="adresse">
       <NotNull>1</NotNull>
       <Position>7</Position>
-      <StateNumber>737187</StateNumber>
+      <StateNumber>737229</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="1569" parent="1508" name="medlemskap">
       <NotNull>1</NotNull>
       <Position>8</Position>
-      <StateNumber>737187</StateNumber>
+      <StateNumber>737229</StateNumber>
       <StoredType>boolean|0s</StoredType>
       <TypeId>16</TypeId>
     </column>
     <column id="1570" parent="1508" name="lagnavn">
       <NotNull>1</NotNull>
       <Position>9</Position>
-      <StateNumber>737187</StateNumber>
+      <StateNumber>737229</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <foreign-key id="1571" parent="1508" name="medlem_postnr_fkey">
       <ColNames>postnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>228120</ObjectId>
-      <StateNumber>737187</StateNumber>
+      <ObjectId>228340</ObjectId>
+      <StateNumber>737229</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>228098</RefTableId>
+      <RefTableId>228318</RefTableId>
     </foreign-key>
     <foreign-key id="1572" parent="1508" name="medlem_lagnavn_fkey">
       <ColNames>lagnavn</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>228125</ObjectId>
-      <StateNumber>737187</StateNumber>
+      <ObjectId>228345</ObjectId>
+      <StateNumber>737229</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>228103</RefTableId>
+      <RefTableId>228323</RefTableId>
     </foreign-key>
     <index id="1573" parent="1508" name="medlem_pkey">
       <ColNames>medlemsnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>228118</ObjectId>
+      <ObjectId>228338</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>737187</StateNumber>
+      <StateNumber>737229</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="1574" parent="1508" name="medlem_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>228119</ObjectId>
+      <ObjectId>228339</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>737187</StateNumber>
-      <UnderlyingIndexId>228118</UnderlyingIndexId>
+      <StateNumber>737229</StateNumber>
+      <UnderlyingIndexId>228338</UnderlyingIndexId>
     </key>
     <check id="1575" parent="1509" name="ck_betalt_dato">
       <ColNames>betalt
 betalt_dato</ColNames>
-      <ObjectId>228134</ObjectId>
+      <ObjectId>228354</ObjectId>
       <Predicate>((betalt = false) AND (betalt_dato IS NULL)) OR ((betalt = true) AND (betalt_dato IS NOT NULL))</Predicate>
-      <StateNumber>737188</StateNumber>
+      <StateNumber>737230</StateNumber>
     </check>
     <check id="1576" parent="1509" name="ck_aar">
       <ColNames>aar</ColNames>
-      <ObjectId>228133</ObjectId>
+      <ObjectId>228353</ObjectId>
       <Predicate>(aar &gt; 1900) AND (aar &lt;= 2026)</Predicate>
-      <StateNumber>737188</StateNumber>
+      <StateNumber>737230</StateNumber>
     </check>
     <column id="1577" parent="1509" name="medlemsnr">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>737188</StateNumber>
+      <StateNumber>737230</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <TypeId>20</TypeId>
     </column>
     <column id="1578" parent="1509" name="aar">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>737188</StateNumber>
+      <StateNumber>737230</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
     <column id="1579" parent="1509" name="betalt">
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>737188</StateNumber>
+      <StateNumber>737230</StateNumber>
       <StoredType>boolean|0s</StoredType>
       <TypeId>16</TypeId>
     </column>
     <column id="1580" parent="1509" name="betalt_dato">
       <Position>4</Position>
-      <StateNumber>737188</StateNumber>
+      <StateNumber>737230</StateNumber>
       <StoredType>date|0s</StoredType>
       <TypeId>1082</TypeId>
     </column>
     <foreign-key id="1581" parent="1509" name="medlemsavgift_medlemsnr_fkey">
       <ColNames>medlemsnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>228137</ObjectId>
-      <StateNumber>737188</StateNumber>
+      <ObjectId>228357</ObjectId>
+      <StateNumber>737230</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>228114</RefTableId>
+      <RefTableId>228334</RefTableId>
     </foreign-key>
     <index id="1582" parent="1509" name="medlemsavgift_pkey">
       <ColNames>medlemsnr
 aar</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>228135</ObjectId>
+      <ObjectId>228355</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>737188</StateNumber>
+      <StateNumber>737230</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="1583" parent="1509" name="medlemsavgift_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>228136</ObjectId>
+      <ObjectId>228356</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>737188</StateNumber>
-      <UnderlyingIndexId>228135</UnderlyingIndexId>
+      <StateNumber>737230</StateNumber>
+      <UnderlyingIndexId>228355</UnderlyingIndexId>
     </key>
     <column id="1584" parent="1510" name="ordrenr">
       <NotNull>1</NotNull>
@@ -10707,23 +10707,23 @@ tidspunkt</ColNames>
     <column id="1612" parent="1513" name="postnr">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>737185</StateNumber>
+      <StateNumber>737227</StateNumber>
       <StoredType>varchar(4)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <column id="1613" parent="1513" name="sted">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>737185</StateNumber>
+      <StateNumber>737227</StateNumber>
       <StoredType>varchar(30)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
     <index id="1614" parent="1513" name="poststed_pkey">
       <ColNames>postnr</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>228101</ObjectId>
+      <ObjectId>228321</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>737185</StateNumber>
+      <StateNumber>737227</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
@@ -10732,10 +10732,10 @@ tidspunkt</ColNames>
     </index>
     <key id="1615" parent="1513" name="poststed_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>228102</ObjectId>
+      <ObjectId>228322</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>737185</StateNumber>
-      <UnderlyingIndexId>228101</UnderlyingIndexId>
+      <StateNumber>737227</StateNumber>
+      <UnderlyingIndexId>228321</UnderlyingIndexId>
     </key>
     <column id="1616" parent="1514" name="vnr">
       <NotNull>1</NotNull>
