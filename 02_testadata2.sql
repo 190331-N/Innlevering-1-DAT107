@@ -15,11 +15,11 @@ UPDATE lokallag SET leder_medlemsnr = 101 where lagnavn = 'Nore_Neset_IL';
 INSERT INTO medlemsavgift (medlemsnr, aar, betalt, betalt_dato)
 VALUES
 (100, 2021, TRUE, '2021-01-10'),
-(101, 2024, FALSE, '2024-04-01'),
-(101, 2026, TRUE, '2026-01-01'),
+(100, 2024, FALSE, NULL),
+(100, 2026, TRUE, '2026-01-01'),
 
 (101, 2004, TRUE, '2004-01-01'),
-(101, 2005, FALSE, '2005-04-01'),
+(101, 2005, FALSE, NULL),
 (101, 2026, TRUE, '2026-01-05'),
 
 (103, 2026, TRUE, '2026-01-01');
